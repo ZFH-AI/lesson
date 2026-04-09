@@ -274,7 +274,9 @@ User_Input = [
             'content': '非上海户籍申请社保流程'
         }, {
             'role': 'assistant',
-            'content': [TextBlock(citations = None, text = '我来帮您了解非上海户籍申请社保的流程。首先让我创建一个任务列表来系统地收集相关信息。', type = 'text'), ToolUseBlock(id = 'call_00_RDtM3NbpQn81fqZ2VXx3G3DN', caller = None, input = {
+            'content': [
+                       TextBlock(citations = None, text = '我来帮您了解非上海户籍申请社保的流程。首先让我创建一个任务列表来系统地收集相关信息。', type = 'text'),
+                       ToolUseBlock(id = 'call_00_RDtM3NbpQn81fqZ2VXx3G3DN', caller = None, input = {
                         'items': [{
                                 'id': '1',
                                 'text': '搜索上海社保相关政策文件',
@@ -310,7 +312,9 @@ User_Input = [
     ]
 
 # Agent主程序 --> 模型
-    [2] >> Model_Output = Message(id = '2dbd014a-5f38-452f-87ee-a29daeec11ed', container = None, content = [TextBlock(citations = None, text = '现在让我开始搜索相关信息。首先搜索上海社保相关政策文件。', type = 'text'), ToolUseBlock(id = 'call_00_k8FtWv1yLX6yI8mYprZqEeyH', caller = None, input = {
+    [2] >> Model_Output = Message(id = '2dbd014a-5f38-452f-87ee-a29daeec11ed', container = None,
+               content = [TextBlock(citations = None, text = '现在让我开始搜索相关信息。首先搜索上海社保相关政策文件。', type = 'text'),
+                         ToolUseBlock(id = 'call_00_k8FtWv1yLX6yI8mYprZqEeyH', caller = None, input = {
                     'items': [{
                             'id': '1',
                             'text': '搜索上海社保相关政策文件',
@@ -333,10 +337,14 @@ User_Input = [
                             'status': 'pending'
                         }
                     ]
-                }, name = 'todo', type = 'tool_use')], model = 'deepseek-chat', role = 'assistant', stop_reason = 'tool_use', stop_sequence = None, type = 'message', usage = Usage(cache_creation = None, cache_creation_input_tokens = 0, cache_read_input_tokens = 0, inference_geo = None, input_tokens = 880, output_tokens = 145, server_tool_use = None, service_tier = 'standard'))
+                }, name = 'todo', type = 'tool_use')], model = 'deepseek-chat', role = 'assistant', stop_reason = 'tool_use', stop_sequence = None, type = 'message',
+          usage = Usage(cache_creation = None, cache_creation_input_tokens = 0, cache_read_input_tokens = 0, inference_geo = None, input_tokens = 880,
+output_tokens = 145, server_tool_use = None, service_tier = 'standard'))
 
 # Agent主程序 --> 将模型反馈信息添加到 --> UserInput
-    [2] >> Model_Output_To_Msg = [TextBlock(citations = None, text = '现在让我开始搜索相关信息。首先搜索上海社保相关政策文件。', type = 'text'), ToolUseBlock(id = 'call_00_k8FtWv1yLX6yI8mYprZqEeyH', caller = None, input = {
+    [2] >> Model_Output_To_Msg = [
+TextBlock(citations = None, text = '现在让我开始搜索相关信息。首先搜索上海社保相关政策文件。', type = 'text'),
+ToolUseBlock(id = 'call_00_k8FtWv1yLX6yI8mYprZqEeyH', caller = None, input = {
                 'items': [{
                         'id': '1',
                         'text': '搜索上海社保相关政策文件',
@@ -440,7 +448,9 @@ User_Input = [
             'content': '非上海户籍申请社保流程'
         }, {
             'role': 'assistant',
-            'content': [TextBlock(citations = None, text = '我来帮您了解非上海户籍申请社保的流程。首先让我创建一个任务列表来系统地收集相关信息。', type = 'text'), ToolUseBlock(id = 'call_00_RDtM3NbpQn81fqZ2VXx3G3DN', caller = None, input = {
+            'content': [
+TextBlock(citations = None, text = '我来帮您了解非上海户籍申请社保的流程。首先让我创建一个任务列表来系统地收集相关信息。', type = 'text'),
+ToolUseBlock(id = 'call_00_RDtM3NbpQn81fqZ2VXx3G3DN', caller = None, input = {
                         'items': [{
                                 'id': '1',
                                 'text': '搜索上海社保相关政策文件',
@@ -474,7 +484,9 @@ User_Input = [
             ]
         }, {
             'role': 'assistant',
-            'content': [TextBlock(citations = None, text = '现在让我开始搜索相关信息。首先搜索上海社保相关政策文件。', type = 'text'), ToolUseBlock(id = 'call_00_k8FtWv1yLX6yI8mYprZqEeyH', caller = None, input = {
+            'content': [
+TextBlock(citations = None, text = '现在让我开始搜索相关信息。首先搜索上海社保相关政策文件。', type = 'text'),
+ToolUseBlock(id = 'call_00_k8FtWv1yLX6yI8mYprZqEeyH', caller = None, input = {
                         'items': [{
                                 'id': '1',
                                 'text': '搜索上海社保相关政策文件',
