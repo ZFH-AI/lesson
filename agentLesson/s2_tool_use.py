@@ -1,4 +1,6 @@
-
+# 特别说明，本系列所有的源码来源：https://github.com/shareAI-lab/learn-claude-code/tree/main/agents
+#           如有违权联系立删 
+#
 """
 +--------+      +-------+      +------------------+
 |  User  | ---> |  LLM  | ---> | Tool Dispatch    |
