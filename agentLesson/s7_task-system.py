@@ -63,7 +63,7 @@ WORKDIR = Path.cwd()
 TASKS_DIR = WORKDIR / ".tasks"
 
 http_client = httpx.Client(verify=False)
-client = Anthropic(api_key="sk-d6545a933eee4b429bd43c198c4026d7",
+client = Anthropic(api_key="sk-xx",
                    base_url="https://api.deepseek.com/anthropic",
                    http_client = http_client)
 
