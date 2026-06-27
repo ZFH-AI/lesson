@@ -1,6 +1,3 @@
-/*
- * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
- */
 #ifndef _OP_API_UT_COMMON_C_SHELL_H_
 #define _OP_API_UT_COMMON_C_SHELL_H_
 
